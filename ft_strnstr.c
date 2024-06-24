@@ -2,8 +2,8 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-    int	i;
-    int j;
+    size_t	i;
+    size_t j;
     j = 0;
 	i = 0;
     if (!*needle)
@@ -24,9 +24,9 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
     }
 	return (NULL);
 }
-int main()
-{
-    char haystack[] = "imanemana";
-    char needle[] = "mana";
-    printf("%s",ft_strnstr(haystack,needle,10));
-}
+// int main()
+// {
+//     char haystack[] = "imanemana";
+//     char needle[] = "mana";
+//     printf("%s",ft_strnstr(haystack,needle,10));
+// }

@@ -15,12 +15,13 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
     dst[i] = '\0';
     while(dst[i])
         i++;
-    return (i);
+    return (ft_strlen(src));
 }
-int main()
-{
-    char src[] = "hadra";
-    char dest[4] = "iman";
-    printf("%zu\n", ft_strlcpy(dest,src,4));
-    printf("%s\n", dest);
-}
+// int main()
+// {
+//     // char src[] = "hadra";
+//     char dest[3];
+//     // printf("%zu\n", ft_strlcpy(dest,src,4));
+//     printf("%zu\n", strlcpy(dest, "lorem ipsum", 3));
+//     printf("%s\n", dest);
+// }

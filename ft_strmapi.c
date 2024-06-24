@@ -32,8 +32,8 @@ char ft_touper(unsigned int s, char c)
 }
 
 
-int main() {
-    char s[6] = "hello";
-    printf("%s", ft_strmapi(s, ft_touper));
-    return 0;
-}
+// int main() {
+//     char s[6] = "hello";
+//     printf("%s", ft_strmapi(s, ft_touper));
+//     return 0;
+// }

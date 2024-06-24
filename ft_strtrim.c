@@ -14,10 +14,10 @@ char *ft_strtrim(char const *s1, char const *set)
 		size_s1--;
 	return (ft_substr(s1, 0, size_s1));
 }
-int main()
-{
-    char *c="1234567890";
-    char *set = "123456789";
-    printf("%s",ft_strtrim(c,set));
-}
+// int main()
+// {
+//     char *c="1234567890";
+//     char *set = "123456789";
+//     printf("%s",ft_strtrim(c,set));
+// }
 // question for size_s1 + 1 and size_s1 - 1 because of the index

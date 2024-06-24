@@ -10,12 +10,15 @@ t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
     	new = NULL;
 	while (lst)
 	{
-		node = ft_lstnew(f(lst->content));
+		
+		node = malloc(sizeof(t_list));
 		if (!node)
 		{
 			ft_lstclear(&new, (*del));
 			return (NULL);
 		}
+		node ->content = f(lst->content);
+		node -> next = NULL;
 		ft_lstadd_back(&new, node);
 		lst = lst->next;
 	}

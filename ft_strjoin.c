@@ -26,9 +26,9 @@ char *ft_strjoin(char const *s1, char const *s2)
 	result[i + j] = '\0';
 	return (result);
 }
-int main()
-{
-    char s[]= "imane";
-    char c[]= "hello";
-    printf("%s",ft_strjoin(s,c));
-}
+// int main()
+// {
+//     char s[]= "imane";
+//     char c[]= "hello";
+//     printf("%s",ft_strjoin(s,c));
+// }

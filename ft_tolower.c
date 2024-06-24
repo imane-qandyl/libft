@@ -6,7 +6,7 @@ int ft_tolower(int c)
 		c = c + 32;
 	return (c);
 }
-int main()
-{
-    printf("%c", ft_tolower('0'));
-}
+// int main()
+// {
+//     printf("%c", ft_tolower('0'));
+// }

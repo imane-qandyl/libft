@@ -16,11 +16,11 @@ void    *ft_memchr(const void *s, int c, size_t n)
     }
     return NULL;
 }
-int main()
-{
-    const char s[] = "imane";
-    char c = 'a';
-    printf("%s", ft_memchr(s,c,2));
-}
+// int main()
+// {
+//     const char s[] = "imane";
+//     char c = 'a';
+//     printf("%s", ft_memchr(s,c,2));
+// }
 //function should return
 // a pointer to the position where the character was found
