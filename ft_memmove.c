@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: imqandyl <imqandyl@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/07/03 11:32:55 by imqandyl          #+#    #+#             */
+/*   Updated: 2024/07/03 11:32:55 by imqandyl         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
@@ -14,11 +26,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 			dest[len] = source[len];
 	return (dst);
 }
-// int main()
-// {
-//     // dest = hijklmnopqrstuvwxyz
-//     // result = abcdefghijklmuvwxyz
-//     char src[50]= "abcdefghijklmnopqrstuvwxyz";
-//     printf ("%s",ft_memmove(src + 7,src,13));
-
-// }

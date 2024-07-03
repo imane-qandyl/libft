@@ -1,9 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: imqandyl <imqandyl@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/07/03 11:35:01 by imqandyl          #+#    #+#             */
+/*   Updated: 2024/07/03 11:35:01 by imqandyl         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-char *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-    // allocates memory for an empty string and returns a pointer to it.
-	size_t		size_s1;
+	size_t	size_s1;
 
 	if (s1 == NULL || set == NULL)
 		return (ft_strdup(""));
@@ -14,10 +25,3 @@ char *ft_strtrim(char const *s1, char const *set)
 		size_s1--;
 	return (ft_substr(s1, 0, size_s1));
 }
-// int main()
-// {
-//     char *c="1234567890";
-//     char *set = "123456789";
-//     printf("%s",ft_strtrim(c,set));
-// }
-// question for size_s1 + 1 and size_s1 - 1 because of the index

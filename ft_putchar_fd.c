@@ -1,15 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: imqandyl <imqandyl@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/07/03 11:33:06 by imqandyl          #+#    #+#             */
+/*   Updated: 2024/07/03 11:33:06 by imqandyl         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
-#include <fcntl.h>
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
-    write(fd,&c,1);
+	write(fd, &c, 1);
 }
-
-// int main()
-// {
-//     int fd = open("hadra.txt", O_CREAT, O_WRONLY);
-//     int fd2 = open("hadra2.txt", O_CREAT, O_WRONLY);
-//     printf("fd = %d\n", fd);
-//     printf("fd2 = %d", fd2);
-// }

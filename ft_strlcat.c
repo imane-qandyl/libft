@@ -1,4 +1,15 @@
-#include "libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: imqandyl <imqandyl@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/07/03 11:34:21 by imqandyl          #+#    #+#             */
+/*   Updated: 2024/07/03 11:34:21 by imqandyl         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
@@ -26,10 +37,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		dst[i] = '\0';
 	return (lendst + lensrc);
 }
-// int main()
-// {
-//     char src[] = "123";
-//     char dest[0] = "";
-//     printf("%zu\n", ft_strlcat(dest,src,0));
-//     // printf("%s\n", dest);
-// }

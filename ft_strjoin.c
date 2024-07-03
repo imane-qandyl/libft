@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: imqandyl <imqandyl@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/07/03 11:34:09 by imqandyl          #+#    #+#             */
+/*   Updated: 2024/07/03 11:34:09 by imqandyl         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-char *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	i;
 	size_t	j;
@@ -26,9 +38,3 @@ char *ft_strjoin(char const *s1, char const *s2)
 	result[i + j] = '\0';
 	return (result);
 }
-// int main()
-// {
-//     char s[]= "imane";
-//     char c[]= "hello";
-//     printf("%s",ft_strjoin(s,c));
-// }

@@ -1,19 +1,25 @@
-#include "libft.h"
-#include <fcntl.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: imqandyl <imqandyl@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/07/03 11:33:43 by imqandyl          #+#    #+#             */
+/*   Updated: 2024/07/03 11:33:43 by imqandyl         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void ft_putstr_fd(char *s, int fd)
+#include "libft.h"
+
+void	ft_putstr_fd(char *s, int fd)
 {
-    int i;
-    i = 0;
-    while(s[i])
-    {
-        write(fd,&s[i],1);
-        i++;
-    }
+	int	i;
+
+	i = 0;
+	while (s[i])
+	{
+		write(fd, &s[i], 1);
+		i++;
+	}
 }
-// int main()
-// {
-//     char *s = "wpfoawkefpoawekfpoawekfapowefk";
-//     int fd = open("13.txt",O_WRONLY);
-//     ft_putstr_fd(s, fd);
-// }
