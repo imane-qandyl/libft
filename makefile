@@ -6,7 +6,7 @@
 #    By: imqandyl <imqandyl@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/04 13:21:58 by imqandyl          #+#    #+#              #
-#    Updated: 2024/07/04 13:21:59 by imqandyl         ###   ########.fr        #
+#    Updated: 2024/07/04 18:16:10 by imqandyl         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,8 @@ all:			$(NAME)
 
 $(NAME):		$(OBJS)
 				ar rcs $(NAME) $(OBJS)
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 				$(RM) $(OBJS) $(BONUS_OBJS)

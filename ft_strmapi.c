@@ -6,7 +6,7 @@
 /*   By: imqandyl <imqandyl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 11:34:39 by imqandyl          #+#    #+#             */
-/*   Updated: 2024/07/03 11:34:39 by imqandyl         ###   ########.fr       */
+/*   Updated: 2024/07/04 18:28:07 by imqandyl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,12 +34,4 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (str);
 	}
 	return (0);
-}
-
-char	ft_touper(unsigned int s, char c)
-{
-	(void)s;
-	if (c >= 97 && c <= 122)
-		c = c - 32;
-	return (c);
 }

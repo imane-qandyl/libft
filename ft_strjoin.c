@@ -6,7 +6,7 @@
 /*   By: imqandyl <imqandyl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 11:34:09 by imqandyl          #+#    #+#             */
-/*   Updated: 2024/07/03 11:34:09 by imqandyl         ###   ########.fr       */
+/*   Updated: 2024/07/04 18:17:18 by imqandyl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	j = 0;
+	if (!s1 && !s2)
+		return (NULL);
 	result_len = ft_strlen(s1) + ft_strlen(s2);
 	result = (char *)malloc(result_len + 1);
 	if (result == NULL)

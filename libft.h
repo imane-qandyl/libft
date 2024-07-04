@@ -6,7 +6,7 @@
 /*   By: imqandyl <imqandyl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 11:35:24 by imqandyl          #+#    #+#             */
-/*   Updated: 2024/07/03 12:28:18 by imqandyl         ###   ########.fr       */
+/*   Updated: 2024/07/04 18:18:58 by imqandyl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <limits.h>
-# include <stdio.h>
 # include <ctype.h>
 # include <string.h>
 
