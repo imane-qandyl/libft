@@ -26,8 +26,6 @@ typedef struct s_list
 	struct s_list	*next;
 }	t_list;
 
-//defines a new type t_list, which is an alias for a structure type
-
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
