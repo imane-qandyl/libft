@@ -6,12 +6,11 @@
 /*   By: imqandyl <imqandyl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 11:39:17 by imqandyl          #+#    #+#             */
-/*   Updated: 2024/07/04 20:10:49 by imqandyl         ###   ########.fr       */
+/*   Updated: 2024/07/06 08:31:39 by imqandyl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static void	check_sign(int *i, const char *str, int *sign)
 {
